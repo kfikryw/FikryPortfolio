@@ -1,12 +1,14 @@
 import { BiodataPage } from "../biodata/biodata-page"
 import { ExperiencePage } from "../experience/experience-page"
 import { useState } from "react"
+import { ProjectPage } from "../project/project-page"
 
 export const HomePage = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false)
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen)
+        console.log("Menu toggled:", menuOpen)
     }
 
     return (
@@ -18,6 +20,7 @@ export const HomePage = () => {
                 <ul className="nav-links">
                     <li><a href="#biodata">Biodata</a></li>
                     <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
                 </ul>
 
                 <div className="hamburger-nav">
@@ -34,6 +37,7 @@ export const HomePage = () => {
                         <ul className={`menu-links ${menuOpen ? "open" : ""}`}>
                             <li><a href="#biodata" onClick={toggleMenu}>Biodata</a></li>
                             <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
+                            <li><a href="#projects" onClick={toggleMenu}>Projects</a></li>
                         </ul>
                     </div>
                 </div>
@@ -47,6 +51,10 @@ export const HomePage = () => {
 
             <div id="experience">
                 <ExperiencePage />
+            </div>
+
+            <div id="projects">
+                <ProjectPage />
             </div>
 
         </div>

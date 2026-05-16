@@ -318,7 +318,7 @@ section {
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(6px);
     border-radius: 1.5rem;
-    padding: 2rem;
+    padding: 1.2rem;
     border: 1px solid rgba(163, 163, 163, 0.4);
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -438,3 +438,8 @@ footer p {
     text-align: center;
     justify-content: center;
 }
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f3f3f3; /* soft light gray */
+}
+
