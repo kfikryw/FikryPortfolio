@@ -6,7 +6,7 @@ export const BiodataPage = () => {
             <h3 className="text-3xl font-bold mb-6 center">Biodata</h3>
 
             <div className="flex justify-center mb-4">
-                // Profile picture is currently commented out to avoid potential issues with image loading. It can be re-enabled once the image source is verified and stable.
+                {/* // Profile picture is currently commented out to avoid potential issues with image loading. It can be re-enabled once the image source is verified and stable. */}
                 {/* <img 
                     src="https://media.licdn.com/dms/image/v2/D5603AQFD1FBc4E2G7Q/profile-displayphoto-shrink_800_800/B56ZUY3BWcGQAc-/0/1739878836032?e=1780531200&v=beta&t=HKRY-y0vCElbtdbMKGLkSrN7L3Hp0PPROMVFNmFMPf4"
                     alt="Profile"
