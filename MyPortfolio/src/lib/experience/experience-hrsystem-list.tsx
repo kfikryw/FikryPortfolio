@@ -1,3 +1,4 @@
+import '../../style/style.css'
 export const ExperienceHrsystemList = () => {
     return (
         <ul className="list-disc ml-6 text-gray-700 space-y-1">
