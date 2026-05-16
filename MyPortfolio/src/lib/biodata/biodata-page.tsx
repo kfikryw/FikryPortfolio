@@ -27,7 +27,7 @@ export const BiodataPage = () => {
                     <ul className="ml-6 list-disc space-y-2">
 
                         {/* LinkedIn */}
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-center gap-4">
                             <a 
                                 href="https://www.linkedin.com/in/wan-ahmad-fikry-wan-effendy-b41b81240" 
                                 className="hover:underline"
@@ -47,7 +47,7 @@ export const BiodataPage = () => {
                             </svg>
                         </li>
 
-                        <li className="flex items-center gap-2">
+                        <li className="flex items-center gap-4">
                             <a 
                                 href="https://github.com/kfikryw" 
                                 className="hover:underline"

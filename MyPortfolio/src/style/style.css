@@ -268,7 +268,7 @@ section {
 }
 
 .detail-container {
-    padding: 1.5rem;
+    padding: 2.5rem;
     flex: 1;
     background: white;
     border-radius: 2rem;
@@ -318,7 +318,7 @@ section {
     background: rgba(255, 255, 255, 0.6);
     backdrop-filter: blur(6px);
     border-radius: 1.5rem;
-    padding: 1.2rem;
+    padding: 2rem;
     border: 1px solid rgba(163, 163, 163, 0.4);
     box-shadow: 0 4px 12px rgba(0,0,0,0.05);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
@@ -443,3 +443,130 @@ body {
     background-color: #f3f3f3; /* soft light gray */
 }
 
+/* ============================
+   MOBILE RESPONSIVE FIXES
+   ============================ */
+
+@media (max-width: 1024px) {
+    section {
+        padding: 4vh 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Reduce section padding */
+    section {
+        padding: 3vh 2rem;
+    }
+
+    /* NAVIGATION */
+    .nav-links {
+        display: none; /* hide desktop menu */
+    }
+
+    .hamburger-nav {
+        display: block; /* show hamburger */
+    }
+
+    nav {
+        justify-content: space-between;
+        padding: 0 1.5rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    /* CARD */
+    .card {
+        padding: 1.2rem;
+        max-width: 100%;
+    }
+
+    /* TEXT BLOCK */
+    .text-block {
+        max-width: 100%;
+        text-align: left;
+    }
+
+    /* PROFILE IMAGE */
+    .pic,
+    .pic-1 {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* BIODATA PROFILE PHOTO */
+    .biodata-page img {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    /* GRID FIXES */
+    .article-container {
+        grid-template-columns: 1fr; /* stack vertically */
+    }
+
+    /* PROJECT IMAGES */
+    .project-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* CONTACT */
+    #contact {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .contact-info-upper-container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+        height: auto;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Extra small screens (iPhone SE, older phones) */
+
+    section {
+        padding: 2vh 1rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    .logo {
+        font-size: 1.3rem;
+    }
+
+    .card {
+        padding: 1rem;
+    }
+
+    .biodata-page img {
+        width: 60px !important;
+        height: 60px !important;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger-nav {
+        display: block;
+    }
+}
+@media (max-width: 768px) {
+    section {
+        padding: 2vh 1rem; /* MUCH smaller padding */
+    }
+}
